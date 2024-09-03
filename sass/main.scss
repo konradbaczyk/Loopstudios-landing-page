@@ -1,0 +1,22 @@
+@use "./resetCSS" as *;
+@use "./variables" as *;
+@use "./components" as *;
+@use "./header/navabar" as *;
+@use "./header/header" as *;
+
+body {
+	font-family: "Josefin Sans", system-ui;
+}
+
+// MEDIA QUERIES
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

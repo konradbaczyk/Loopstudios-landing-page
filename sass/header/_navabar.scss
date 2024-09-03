@@ -1,0 +1,142 @@
+@use "../resetCSS" as *;
+@use "../variables" as *;
+@use "../components" as *;
+
+.navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 3.5rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+
+	&__menu-btn {
+		padding: 2rem;
+		background-image: url("../../images/icon-hamburger.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 100;
+	}
+
+	&__menu {
+		position: fixed;
+		right: 0; // left/right: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		padding-left: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2em;
+		background-color: $black;
+		transform: scaleX(0);
+		transform-origin: right; //left/right;
+		opacity: 0;
+		transition: transform 0.5s, opacity 0.5s;
+
+		&--active {
+			transform: scaleX(1);
+			opacity: 1;
+		}
+	}
+
+	&__menu-link {
+		padding: 0.5em;
+		font-size: 2.2rem;
+		font-weight: 300;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&__logo {
+		width: 45%;
+		padding: 1rem;
+		display: flex;
+		justify-content: start;
+		z-index: 100;
+	}
+}
+
+// MEDIA QUERIES
+@media (min-width: 768px) {
+	.navigation {
+		height: 9rem;
+		padding-bottom: 1rem;
+
+		&__menu-btn {
+			display: none;
+		}
+
+		&__menu {
+			position: static;
+			width: fit-content;
+			padding: 0;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 2em;
+			background-color: transparent;
+			transform: scaleX(1);
+			opacity: 1;
+		}
+
+		&__menu-item {
+			position: relative;
+			height: 100%;
+			width: fit-content;
+			display: flex;
+			align-items: center;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 40%;
+				height: 2px;
+				background-color: $white;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			&:hover::before {
+				opacity: 1;
+			}
+		}
+
+		&__menu-link {
+			font-size: 1.6rem;
+			font-weight: bold;
+			text-transform: none;
+			transition: color 0.3s;
+
+			&:hover,
+			&:focus {
+				color: $white;
+			}
+
+			&:focus {
+				outline: 1px solid $white;
+			}
+		}
+
+		&__logo {
+			width: fit-content;
+
+			&:focus {
+				outline: 1px solid $white;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.navigation {
+		padding: 6.5rem 1rem 0 1rem;
+		height: 10rem;
+	}
+}

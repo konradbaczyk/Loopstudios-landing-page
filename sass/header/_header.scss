@@ -1,0 +1,79 @@
+@use "../resetCSS" as *;
+@use "../variables" as *;
+@use "../components" as *;
+
+.header {
+	position: relative;
+	height: 65rem;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	background-image: url("../images/mobile/image-hero.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__shadow {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $hero-shadow;
+	}
+
+	&__hero-text {
+		position: relative;
+		transform: translateY(10%);
+		width: 90%;
+		height: fit-content;
+		margin: 0 auto;
+		padding: 2rem;
+		font-size: 3.5rem;
+		font-weight: 400;
+		color: $white;
+		text-transform: uppercase;
+		border: 2px solid $white;
+		z-index: 50;
+	}
+}
+
+@media (min-width: 576px) {
+	.header {
+		&__hero-text {
+			width: 80%;
+			margin: 0 auto;
+			font-size: 5rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		background-image: url("../images/desktop/image-hero.jpg");
+
+		&__hero-text {
+			width: 57%;
+			margin: 0 0 0 2rem;
+			padding: 3rem 4rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		&__hero-text {
+			font-size: 6rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		&__hero-text {
+			font-size: 7.1rem;
+		}
+	}
+}
