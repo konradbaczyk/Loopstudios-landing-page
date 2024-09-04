@@ -1,0 +1,129 @@
+@use "../resetCSS" as *;
+@use "../variables" as *;
+@use "../components" as *;
+
+.footer {
+	width: 100%;
+	height: fit-content;
+	padding: 5rem 2rem;
+	text-align: center;
+	color: $white;
+	background-color: $black;
+
+	&__logo {
+		width: 35%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	&__menu {
+		height: 100%;
+		width: 100%;
+		margin-top: 4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2em;
+	}
+
+	&__menu-link {
+		padding: 0.5em;
+		font-size: 1.6rem;
+	}
+
+	&__social-icons {
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+	}
+
+	&__copy {
+		font-size: 1.4rem;
+		font-weight: bold;
+		color: $dark-gray;
+	}
+}
+
+// MEDIA QUERIES
+
+@media (min-width: 768px) {
+	.footer {
+		display: flex;
+		justify-content: space-between;
+
+		&__navigation,
+		&__social {
+			width: fit-content;
+		}
+
+		&__logo {
+			width: fit-content;
+			margin: 0;
+		}
+
+		&__menu {
+			height: fit-content;
+			width: fit-content;
+			margin-top: 4rem;
+			flex-direction: row;
+			justify-content: center;
+			gap: 2rem;
+		}
+
+		&__menu-item,
+		&__icon {
+			position: relative;
+			padding-bottom: 0.8rem;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 40%;
+				height: 2px;
+				background-color: $white;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			&:hover::before {
+				opacity: 1;
+			}
+		}
+
+		&__menu-link {
+			padding: 0;
+			font-size: 1.6rem;
+		}
+
+		&__social {
+			display: flex;
+			flex-direction: column;
+			align-items: end;
+		}
+
+		&__social-icons {
+			width: fit-content;
+			margin-top: 0;
+			margin-bottom: 4rem;
+			padding: 0.8rem;
+			justify-content: flex-end;
+			gap: 2rem;
+		}
+
+		&__copy {
+			width: fit-content;
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}

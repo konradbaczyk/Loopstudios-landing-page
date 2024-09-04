@@ -502,6 +502,113 @@ textarea {
   padding: 8rem 2rem;
 }
 
+.footer {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.footer__logo {
+  width: 35%;
+  margin: 0 auto;
+  display: block;
+}
+.footer__menu {
+  height: 100%;
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.footer__menu-link {
+  padding: 0.5em;
+  font-size: 1.6rem;
+}
+.footer__social-icons {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer__copy {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(140, 140, 140);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__navigation, .footer__social {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer__logo {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+  .footer__menu {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 4rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .footer__menu-item, .footer__icon {
+    position: relative;
+    padding-bottom: 0.8rem;
+  }
+  .footer__menu-item::before, .footer__icon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .footer__menu-item:hover::before, .footer__icon:hover::before {
+    opacity: 1;
+  }
+  .footer__menu-link {
+    padding: 0;
+    font-size: 1.6rem;
+  }
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .footer__social-icons {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    padding: 0.8rem;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+  .footer__copy {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.6rem;
+  }
+}
 body {
   font-family: "Josefin Sans", system-ui;
 }/*# sourceMappingURL=index.css.map */
