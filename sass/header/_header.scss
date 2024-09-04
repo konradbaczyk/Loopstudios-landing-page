@@ -8,6 +8,7 @@
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
+	padding: 0 2rem;
 	display: flex;
 	align-items: center;
 	background-image: url("../images/mobile/image-hero.jpg");
@@ -27,9 +28,7 @@
 	&__hero-text {
 		position: relative;
 		transform: translateY(10%);
-		width: 90%;
 		height: fit-content;
-		margin: 0 auto;
 		padding: 2rem;
 		font-size: 3.5rem;
 		font-weight: 400;
@@ -44,7 +43,6 @@
 	.header {
 		&__hero-text {
 			width: 80%;
-			margin: 0 auto;
 			font-size: 5rem;
 		}
 	}
@@ -56,7 +54,6 @@
 
 		&__hero-text {
 			width: 57%;
-			margin: 0 0 0 2rem;
 			padding: 3rem 4rem;
 		}
 	}

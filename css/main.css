@@ -46,7 +46,7 @@ textarea {
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1150px;
+  max-width: 1200px;
 }
 
 .no-scroll {
@@ -56,15 +56,15 @@ textarea {
 .navigation {
   position: fixed;
   top: 0;
-  width: 100%;
-  padding: 3.5rem 1rem;
+  left: 0;
+  padding: 3.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
 .navigation__menu-btn {
-  padding: 2rem;
+  padding: 2rem 0 2rem 2rem;
   background-image: url("../../images/icon-hamburger.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -100,7 +100,7 @@ textarea {
 }
 .navigation__logo {
   width: 45%;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   display: flex;
   justify-content: start;
   z-index: 100;
@@ -150,6 +150,9 @@ textarea {
   .navigation__menu-item:hover::before {
     opacity: 1;
   }
+  .navigation__menu-item:last-of-type :first-child {
+    padding-right: 0;
+  }
   .navigation__menu-link {
     font-size: 1.6rem;
     font-weight: bold;
@@ -172,8 +175,18 @@ textarea {
 }
 @media (min-width: 992px) {
   .navigation {
-    padding: 6.5rem 1rem 0 1rem;
+    padding-top: 6.5rem;
     height: 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navigation {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6.5rem 0 0 0;
+  }
+  .navigation__logo {
+    padding: 1rem 1rem 1rem 0;
   }
 }
 .header {
@@ -182,6 +195,7 @@ textarea {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   background-image: url("../images/mobile/image-hero.jpg");
@@ -200,10 +214,8 @@ textarea {
 .header__hero-text {
   position: relative;
   transform: translateY(10%);
-  width: 90%;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 0 auto;
   padding: 2rem;
   font-size: 3.5rem;
   font-weight: 400;
@@ -216,7 +228,6 @@ textarea {
 @media (min-width: 576px) {
   .header__hero-text {
     width: 80%;
-    margin: 0 auto;
     font-size: 5rem;
   }
 }
@@ -226,7 +237,6 @@ textarea {
   }
   .header__hero-text {
     width: 57%;
-    margin: 0 0 0 2rem;
     padding: 3rem 4rem;
   }
 }
