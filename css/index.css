@@ -197,6 +197,7 @@ textarea {
     padding: 3.5rem 2rem;
   }
   to {
+    height: 6rem;
     padding: 1rem 2rem;
     background-color: rgb(0, 0, 0);
   }
