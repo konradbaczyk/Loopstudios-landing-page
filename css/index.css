@@ -20,6 +20,7 @@ ul {
 }
 
 a {
+  cursor: pointer;
   color: inherit;
   text-decoration: none;
 }
@@ -265,6 +266,7 @@ textarea {
 .about-us {
   height: -moz-fit-content;
   height: fit-content;
+  margin-bottom: 6rem;
   text-align: center;
 }
 .about-us__img--desktop {
@@ -282,6 +284,7 @@ textarea {
   text-transform: uppercase;
 }
 .about-us__text-block {
+  padding: 0 1.2rem;
   font-size: 1.7rem;
   line-height: 130%;
   color: rgb(105, 105, 105);
@@ -315,6 +318,9 @@ textarea {
   }
 }
 @media (min-width: 1200px) {
+  .about-us {
+    margin-bottom: 12rem;
+  }
   .about-us__text-content {
     max-width: 62rem;
     padding-top: 7rem;
@@ -325,7 +331,170 @@ textarea {
     font-size: 5.3rem;
   }
   .about-us__text-block {
+    padding: 0;
     font-size: 2rem;
+  }
+}
+.creations {
+  position: relative;
+  margin-bottom: 10rem;
+}
+.creations__heading {
+  margin-bottom: 4rem;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+.creations__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.creations__box-link {
+  position: relative;
+  width: 100%;
+  max-width: 34rem;
+  height: 12rem;
+  padding: 2rem;
+  display: flex;
+  align-items: end;
+  color: rgb(255, 255, 255);
+}
+.creations__box-link--name {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.creations__box-link--bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 14rem 0 7rem rgba(0, 0, 0, 0.6);
+  z-index: -100;
+  transition: opacity 0.3s;
+}
+.creations__box-link--bg.earth {
+  background-image: url("../../images/mobile/image-deep-earth.jpg");
+}
+.creations__box-link--bg.arcade {
+  background-image: url("../../images/mobile/image-night-arcade.jpg");
+}
+.creations__box-link--bg.soccer {
+  background-image: url("../../images/mobile/image-soccer-team.jpg");
+}
+.creations__box-link--bg.grid {
+  background-image: url("../../images/mobile/image-grid.jpg");
+}
+.creations__box-link--bg.vr {
+  background-image: url("../../images/mobile/image-from-above.jpg");
+}
+.creations__box-link--bg.borealis {
+  background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+}
+.creations__box-link--bg.curiosity {
+  background-image: url("../../images/mobile/image-curiosity.jpg");
+}
+.creations__box-link--bg.fisheye {
+  background-image: url("../../images/mobile/image-fisheye.jpg");
+}
+.creations__box-link:hover .creations__box-link--name, .creations__box-link:active .creations__box-link--name, .creations__box-link:focus .creations__box-link--name {
+  color: rgb(0, 0, 0);
+}
+.creations__box-link:hover .creations__box-link--bg, .creations__box-link:active .creations__box-link--bg, .creations__box-link:focus .creations__box-link--bg {
+  opacity: 0.3;
+}
+.creations__all-btn {
+  position: absolute;
+  bottom: -7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16rem;
+  margin: 3rem auto 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  font-family: "Alata";
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid rgb(0, 0, 0);
+  transition: color 0.3s, background-color 0.3s;
+}
+.creations__all-btn:hover, .creations__all-btn:active, .creations__all-btn:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 992px) {
+  .creations {
+    position: relative;
+  }
+  .creations__heading {
+    margin-bottom: 6rem;
+    padding-top: 1rem;
+    font-size: 3.3rem;
+    text-align: left;
+  }
+  .creations__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .creations__box-link {
+    max-width: 24%;
+    height: 45rem;
+  }
+  .creations__box-link--name {
+    font-size: 3.3rem;
+  }
+  .creations__box-link--bg.earth {
+    background-image: url("../../images/desktop/image-deep-earth.jpg");
+  }
+  .creations__box-link--bg.arcade {
+    background-image: url("../../images/desktop/image-night-arcade.jpg");
+  }
+  .creations__box-link--bg.soccer {
+    background-image: url("../../images/desktop/image-soccer-team.jpg");
+  }
+  .creations__box-link--bg.grid {
+    background-image: url("../../images/desktop/image-grid.jpg");
+  }
+  .creations__box-link--bg.vr {
+    background-image: url("../../images/desktop/image-from-above.jpg");
+  }
+  .creations__box-link--bg.borealis {
+    background-image: url("../../images/desktop/image-pocket-borealis.jpg");
+  }
+  .creations__box-link--bg.curiosity {
+    background-image: url("../../images/desktop/image-curiosity.jpg");
+  }
+  .creations__box-link--bg.fisheye {
+    background-image: url("../../images/desktop/image-fisheye.jpg");
+  }
+  .creations__all-btn {
+    top: 0;
+    right: 0;
+    left: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1200px) {
+  .creations__heading {
+    font-size: 5.3rem;
+  }
+  .creations__all-btn {
+    font-size: 1.8rem;
   }
 }
 .main {

@@ -4,6 +4,7 @@
 
 .about-us {
 	height: fit-content;
+	margin-bottom: 6rem;
 	text-align: center;
 
 	&__img {
@@ -26,6 +27,7 @@
 	}
 
 	&__text-block {
+		padding: 0 1.2rem;
 		font-size: 1.7rem;
 		line-height: 130%;
 		color: $very-dark-gray;
@@ -69,6 +71,8 @@
 
 @media (min-width: 1200px) {
 	.about-us {
+		margin-bottom: 12rem;
+
 		&__text-content {
 			max-width: 62rem;
 			padding-top: 7rem;
@@ -81,6 +85,7 @@
 		}
 
 		&__text-block {
+			padding: 0;
 			font-size: 2rem;
 		}
 	}
