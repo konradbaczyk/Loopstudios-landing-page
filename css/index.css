@@ -192,9 +192,6 @@ textarea {
 .header {
   position: relative;
   height: 65rem;
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -246,10 +243,14 @@ textarea {
   }
 }
 @media (min-width: 1200px) {
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   .header__hero-text {
     font-size: 7.1rem;
   }
 }
 body {
   font-family: "Josefin Sans", system-ui;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=index.css.map */

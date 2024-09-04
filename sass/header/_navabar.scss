@@ -106,11 +106,11 @@
 			&:hover::before {
 				opacity: 1;
 			}
-		}
 
-		&__menu-item:last-of-type {
-			:first-child {
-				padding-right: 0;
+			&:last-of-type {
+				:first-child {
+					padding-right: 0;
+				}
 			}
 		}
 

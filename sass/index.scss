@@ -1,8 +1,9 @@
-@use "./resetCSS" as *;
-@use "./variables" as *;
-@use "./components" as *;
-@use "./header/navabar" as *;
-@use "./header/header" as *;
+@use "./resetCSS";
+@use "./variables";
+@use "./components";
+@use "./header/navabar";
+@use "./header/header";
+@use "../sass/main/aboutUs";
 
 body {
 	font-family: "Josefin Sans", system-ui;
