@@ -1,6 +1,7 @@
 @use "../resetCSS" as *;
 @use "../variables" as *;
 @use "../components" as *;
+@use "./navabar";
 
 .header {
 	position: relative;
@@ -74,3 +75,4 @@
 		}
 	}
 }
+

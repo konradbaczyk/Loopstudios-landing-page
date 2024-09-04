@@ -11,6 +11,8 @@
 	justify-content: space-between;
 	align-items: center;
 	z-index: 100;
+	animation: navbarAnimation forwards;
+	animation-timeline: view(0 100%);
 
 	&__menu-btn {
 		padding: 2rem 0 2rem 2rem;
@@ -156,5 +158,16 @@
 		&__logo {
 			padding: 1rem 1rem 1rem 0;
 		}
+	}
+}
+
+@keyframes navbarAnimation {
+	from {
+		padding: 3.5rem 2rem;
+	}
+
+	to {
+		padding: 1rem 2rem;
+		background-color: $black;
 	}
 }
