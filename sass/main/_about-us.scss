@@ -1,3 +1,87 @@
 @use "../resetCSS" as *;
 @use "../variables" as *;
 @use "../components" as *;
+
+.about-us {
+	height: fit-content;
+	text-align: center;
+
+	&__img {
+		&--desktop {
+			display: none;
+		}
+	}
+
+	&__text-content {
+		max-width: 46rem;
+		margin: 0 auto;
+		padding-top: 3rem;
+	}
+
+	&__heading {
+		margin-bottom: 2rem;
+		font-size: 3.3rem;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	&__text-block {
+		font-size: 1.7rem;
+		line-height: 130%;
+		color: $very-dark-gray;
+	}
+}
+
+@media (min-width: 992px) {
+	.about-us {
+		position: relative;
+		text-align: left;
+
+		&__img {
+			&--mobile {
+				display: none;
+			}
+
+			&--desktop {
+				display: block;
+			}
+		}
+
+		&__text-content {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			max-width: 50rem;
+			padding-top: 6rem;
+			padding-left: 6rem;
+			background-color: $white;
+		}
+
+		&__heading {
+			font-size: 3.3rem;
+		}
+
+		&__text-block {
+			font-size: 1.7rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.about-us {
+		&__text-content {
+			max-width: 62rem;
+			padding-top: 7rem;
+			padding-left: 7rem;
+			background-color: $white;
+		}
+
+		&__heading {
+			font-size: 5.3rem;
+		}
+
+		&__text-block {
+			font-size: 2rem;
+		}
+	}
+}

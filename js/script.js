@@ -1,4 +1,3 @@
-// Menu items
 const btnToggle = document.getElementById("btn-toggle-menu");
 const navMenu = document.getElementById("menu");
 

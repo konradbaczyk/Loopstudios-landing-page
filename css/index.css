@@ -262,6 +262,76 @@ textarea {
     font-size: 7.1rem;
   }
 }
+.about-us {
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+.about-us__img--desktop {
+  display: none;
+}
+.about-us__text-content {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+.about-us__heading {
+  margin-bottom: 2rem;
+  font-size: 3.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.about-us__text-block {
+  font-size: 1.7rem;
+  line-height: 130%;
+  color: rgb(105, 105, 105);
+}
+
+@media (min-width: 992px) {
+  .about-us {
+    position: relative;
+    text-align: left;
+  }
+  .about-us__img--mobile {
+    display: none;
+  }
+  .about-us__img--desktop {
+    display: block;
+  }
+  .about-us__text-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 50rem;
+    padding-top: 6rem;
+    padding-left: 6rem;
+    background-color: rgb(255, 255, 255);
+  }
+  .about-us__heading {
+    font-size: 3.3rem;
+  }
+  .about-us__text-block {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us__text-content {
+    max-width: 62rem;
+    padding-top: 7rem;
+    padding-left: 7rem;
+    background-color: rgb(255, 255, 255);
+  }
+  .about-us__heading {
+    font-size: 5.3rem;
+  }
+  .about-us__text-block {
+    font-size: 2rem;
+  }
+}
+.main {
+  padding: 8rem 2rem;
+}
+
 body {
   font-family: "Josefin Sans", system-ui;
 }/*# sourceMappingURL=index.css.map */
