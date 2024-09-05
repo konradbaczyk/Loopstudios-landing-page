@@ -4,9 +4,11 @@
 @use "../animations" as *;
 
 .about-us {
+	position: relative;
 	height: fit-content;
 	margin-bottom: 6rem;
 	text-align: center;
+	z-index: -10;
 	opacity: 0;
 	animation: 1s 2s forwards showSection;
 

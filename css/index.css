@@ -100,6 +100,8 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   z-index: 100;
+  opacity: 0;
+  animation: 0.5s ease-in 1.3s forwards showNavItem;
 }
 .navigation__menu {
   position: fixed;
@@ -305,10 +307,12 @@ textarea {
   }
 }
 .about-us {
+  position: relative;
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 6rem;
   text-align: center;
+  z-index: -10;
   opacity: 0;
   animation: 1s 2s forwards showSection;
 }
@@ -381,6 +385,10 @@ textarea {
 .creations {
   position: relative;
   margin-bottom: 10rem;
+  z-index: -10;
+  opacity: 0;
+  animation: forwards showSection;
+  animation-timeline: view(90% 5%);
 }
 .creations__heading {
   margin-bottom: 4rem;
@@ -542,6 +550,10 @@ textarea {
 }
 .main {
   padding: 8rem 2rem;
+}
+
+.footer-section {
+  background-color: rgb(0, 0, 0);
 }
 
 .footer {

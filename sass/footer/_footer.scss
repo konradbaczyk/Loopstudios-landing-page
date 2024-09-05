@@ -2,6 +2,10 @@
 @use "../variables" as *;
 @use "../components" as *;
 
+.footer-section {
+	background-color: $black;
+}
+
 .footer {
 	width: 100%;
 	height: fit-content;

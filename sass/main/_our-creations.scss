@@ -5,6 +5,11 @@
 .creations {
 	position: relative;
 	margin-bottom: 10rem;
+	z-index: -10;
+	opacity: 0;
+	animation: forwards showSection;
+	animation-timeline: view(90% 5%);
+
 	&__heading {
 		margin-bottom: 4rem;
 		font-size: 3.3rem;

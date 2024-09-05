@@ -21,6 +21,8 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		z-index: 100;
+		opacity: 0;
+		animation: 0.5s ease-in 1.3s forwards showNavItem;
 	}
 
 	&__menu {
