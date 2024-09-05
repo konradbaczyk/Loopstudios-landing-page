@@ -96,7 +96,7 @@ textarea {
 }
 .navigation__menu-btn {
   padding: 2rem 0 2rem 2rem;
-  background-image: url("../../images/icon-hamburger.svg");
+  background-image: url("./../images/icon-hamburger.svg");
   background-repeat: no-repeat;
   background-position: center;
   z-index: 100;
@@ -210,11 +210,8 @@ textarea {
     text-transform: none;
     transition: color 0.3s;
   }
-  .navigation__menu-link:hover, .navigation__menu-link:focus {
+  .navigation__menu-link:hover, .navigation__menu-link:focus, .navigation__menu-link:active {
     color: rgb(255, 255, 255);
-  }
-  .navigation__menu-link:focus {
-    outline: 1px solid rgb(255, 255, 255);
   }
   .navigation__logo {
     width: -moz-fit-content;
@@ -425,28 +422,28 @@ textarea {
   transition: opacity 0.3s;
 }
 .creations__box-link--bg.earth {
-  background-image: url("../../images/mobile/image-deep-earth.jpg");
+  background-image: url("./../images/mobile/image-deep-earth.jpg");
 }
 .creations__box-link--bg.arcade {
-  background-image: url("../../images/mobile/image-night-arcade.jpg");
+  background-image: url("./../images/mobile/image-night-arcade.jpg");
 }
 .creations__box-link--bg.soccer {
-  background-image: url("../../images/mobile/image-soccer-team.jpg");
+  background-image: url("./../images/mobile/image-soccer-team.jpg");
 }
 .creations__box-link--bg.grid {
-  background-image: url("../../images/mobile/image-grid.jpg");
+  background-image: url("./../images/mobile/image-grid.jpg");
 }
 .creations__box-link--bg.vr {
-  background-image: url("../../images/mobile/image-from-above.jpg");
+  background-image: url("./../images/mobile/image-from-above.jpg");
 }
 .creations__box-link--bg.borealis {
-  background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+  background-image: url("./../images/mobile/image-pocket-borealis.jpg");
 }
 .creations__box-link--bg.curiosity {
-  background-image: url("../../images/mobile/image-curiosity.jpg");
+  background-image: url("./../images/mobile/image-curiosity.jpg");
 }
 .creations__box-link--bg.fisheye {
-  background-image: url("../../images/mobile/image-fisheye.jpg");
+  background-image: url("./../images/mobile/image-fisheye.jpg");
 }
 .creations__box-link:hover .creations__box-link--name, .creations__box-link:active .creations__box-link--name, .creations__box-link:focus .creations__box-link--name {
   color: rgb(0, 0, 0);
@@ -503,28 +500,28 @@ textarea {
     font-size: 3.3rem;
   }
   .creations__box-link--bg.earth {
-    background-image: url("../../images/desktop/image-deep-earth.jpg");
+    background-image: url("./../images/desktop/image-deep-earth.jpg");
   }
   .creations__box-link--bg.arcade {
-    background-image: url("../../images/desktop/image-night-arcade.jpg");
+    background-image: url("./../images/desktop/image-night-arcade.jpg");
   }
   .creations__box-link--bg.soccer {
-    background-image: url("../../images/desktop/image-soccer-team.jpg");
+    background-image: url("./../images/desktop/image-soccer-team.jpg");
   }
   .creations__box-link--bg.grid {
-    background-image: url("../../images/desktop/image-grid.jpg");
+    background-image: url("./../images/desktop/image-grid.jpg");
   }
   .creations__box-link--bg.vr {
-    background-image: url("../../images/desktop/image-from-above.jpg");
+    background-image: url("./../images/desktop/image-from-above.jpg");
   }
   .creations__box-link--bg.borealis {
-    background-image: url("../../images/desktop/image-pocket-borealis.jpg");
+    background-image: url("./../images/desktop/image-pocket-borealis.jpg");
   }
   .creations__box-link--bg.curiosity {
-    background-image: url("../../images/desktop/image-curiosity.jpg");
+    background-image: url("./../images/desktop/image-curiosity.jpg");
   }
   .creations__box-link--bg.fisheye {
-    background-image: url("../../images/desktop/image-fisheye.jpg");
+    background-image: url("./../images/desktop/image-fisheye.jpg");
   }
   .creations__all-btn {
     top: 0;

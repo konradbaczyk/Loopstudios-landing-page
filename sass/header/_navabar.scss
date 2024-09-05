@@ -17,7 +17,7 @@
 
 	&__menu-btn {
 		padding: 2rem 0 2rem 2rem;
-		background-image: url("../../images/icon-hamburger.svg");
+		background-image: url("./../images/icon-hamburger.svg");
 		background-repeat: no-repeat;
 		background-position: center;
 		z-index: 100;
@@ -145,12 +145,9 @@
 			transition: color 0.3s;
 
 			&:hover,
-			&:focus {
+			&:focus,
+			&:active {
 				color: $white;
-			}
-
-			&:focus {
-				outline: 1px solid $white;
 			}
 		}
 
