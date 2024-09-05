@@ -250,8 +250,6 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  opacity: 0;
-  animation: 2s forwards showSection;
 }
 .header__shadow {
   position: absolute;
@@ -385,10 +383,6 @@ textarea {
 .creations {
   position: relative;
   margin-bottom: 10rem;
-  z-index: -10;
-  opacity: 0;
-  animation: forwards showSection;
-  animation-timeline: view(90% 5%);
 }
 .creations__heading {
   margin-bottom: 4rem;
@@ -485,7 +479,9 @@ textarea {
 
 @media (min-width: 992px) {
   .creations {
-    position: relative;
+    opacity: 0;
+    animation: forwards showSection;
+    animation-timeline: view(90% 5%);
   }
   .creations__heading {
     margin-bottom: 6rem;
