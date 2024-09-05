@@ -1,11 +1,14 @@
 @use "../resetCSS" as *;
 @use "../variables" as *;
 @use "../components" as *;
+@use "../animations" as *;
 
 .about-us {
 	height: fit-content;
 	margin-bottom: 6rem;
 	text-align: center;
+	opacity: 0;
+	animation: 1s 2s forwards showSection;
 
 	&__img {
 		&--desktop {

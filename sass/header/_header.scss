@@ -2,6 +2,7 @@
 @use "../variables" as *;
 @use "../components" as *;
 @use "./navabar";
+@use "../animations" as *;
 
 .header {
 	position: relative;
@@ -13,6 +14,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	opacity: 0;
+	animation: 2s forwards showSection;
 
 	&__shadow {
 		position: absolute;
@@ -34,6 +37,8 @@
 		text-transform: uppercase;
 		border: 2px solid $white;
 		z-index: 50;
+		opacity: 0;
+		animation: 0.8s ease-in 1.7s forwards showSection;
 	}
 }
 
@@ -75,4 +80,3 @@
 		}
 	}
 }
-

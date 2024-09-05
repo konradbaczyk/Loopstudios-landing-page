@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+@keyframes showSection {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes showNavItem {
+	from {
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes navbarAnimation {
+	from {
+		padding: 3.5rem 2rem;
+	}
+
+	to {
+		height: 6rem;
+		padding: 1rem 2rem;
+		background-color: $black;
+	}
+}
